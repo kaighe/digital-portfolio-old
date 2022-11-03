@@ -23,7 +23,7 @@ projects = [
         "title":"Here Come The Frogs", 
         "description":"My first experience with webdev. Just click frogs to make more.", 
         "lang":"Javascript, HTML", 
-        "img":"./images/frogs.png", 
+        "img":"./images/frogs.PNG", 
         "link":"./Frogs/index.html", 
         "score":3, 
         "date": Date.parse('Feb 1 2022 0:0:0')
