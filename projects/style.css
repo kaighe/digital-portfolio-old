@@ -1,0 +1,186 @@
+body {
+    margin: 0;
+    --color1: #3C1B43;
+    --color2: #501537;
+    --color3: #922D50;
+    --color4: #D4E79E;
+    --color5: #a4af72;
+    --color6: #465ff0;
+    --color7: #29122e;
+    background-color: var(--color1);
+    color: var(--color4);
+    font-family: 'Roboto Mono';
+    width: 100%;
+}
+
+.site-wrapper{
+    overflow: hidden;
+}
+
+.center{
+    position:absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.flexbox-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap-reverse;
+}
+
+@keyframes fade-in {
+    0%{
+        opacity: 0%;
+    }
+
+    100%{
+        opacity: 100%;
+    }
+}
+
+@keyframes fade-out {
+    0%{
+        opacity: 100%;
+    }
+
+    100%{
+        opacity: 0%;
+    }
+}
+
+.center-title{
+    position: relative;
+    color: var(--color4);
+    font-size: 20pt;
+
+    opacity: 0%;
+    animation-name: fade-in;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+    text-align: center;
+    z-index: 100;
+}
+
+.center-text{
+    color: var(--color5);
+    font-size: 20pt;
+
+    opacity: 0%;
+    animation-name: fade-in;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+    text-align: center;
+}
+
+.link{
+    text-decoration:none;
+    color: var(--color6);
+    font-weight: bold;
+    white-space: nowrap;
+}
+
+.project-card{
+    display: block;
+    position:relative;
+    width: min(400px, 80vw);
+    height: 280px;
+    background-color: var(--color2);
+    border-radius: 20px;
+    border: 5px solid black;
+    overflow: hidden;
+    color: inherit;
+    transition: border 0.2s;
+}
+
+.project-card:hover{
+    border: 5px solid rgb(92, 92, 92);
+}
+
+.project-card-image{
+    width: 100%;
+}
+
+.project-card-info{
+    position:absolute;
+    padding: 5px;
+    top:60%;
+    left: -2px;
+    width:100%;
+    background-color: var(--color1);
+    border: 2px solid black;
+}
+
+.project-card-title{
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.project-card-language{
+    font-size: 15px;
+    color: var(--color5);
+}
+
+.project-card-description{
+    position:absolute;
+    background-color: var(--color1);
+    top:60%;
+    width: 100%;
+    height: 100%;
+    padding: 5px;
+    padding-top: calc(25px + 4ch);
+}
+
+footer {
+    margin-top: 40px;
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+    background-color: var(--color7);
+    color: var(--color5);
+}
+
+.project-showcase{
+    display: grid;
+    gap: 10px;
+    grid-template-columns: repeat(auto-fill, minmax(410px, 1fr));
+    grid-auto-rows: auto;
+    justify-items: center;
+    align-items: center;
+}
+
+.options{
+    display: grid;
+    gap: 10px;
+    grid-template-columns: 1fr;
+    grid-auto-rows: auto;
+    justify-items: left;
+    align-items: center;
+
+    background-color: var(--color7);
+    width:100%;
+    margin-bottom: 20px;
+    border: 1px solid black;
+    padding: 10px;
+}
+
+#filter{
+    font-size: 15pt;
+    color: var(--color4);
+    background-color: var(--color1);
+    border-radius: 5px;
+}
+
+.project-card.fadeout{
+    animation-name: fade-out;
+    animation-duration: 0.5s;
+    animation-fill-mode: forwards;
+}
+
+.project-card.fadein{
+    animation-name: fade-in;
+    animation-duration: 0.5s;
+    animation-fill-mode: forwards;
+}
