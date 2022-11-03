@@ -1,6 +1,5 @@
 function createHTML(){
-    html = `<link href="./loadscreen.css" rel="stylesheet" type="text/css" />
-    <div class="cover">
+    html = `<div class="cover">
         <div class="center">
             <div class="loading loading1"></div>
             <div class="loading loading2"></div>
