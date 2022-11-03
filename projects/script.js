@@ -34,7 +34,7 @@ projects = [
         "lang":"GML", 
         "img":"./images/MotsMechants.png", 
         "link":"./MotsMechants/index.html", 
-        "score":4.5, 
+        "score":5, 
         "date": Date.parse('June 20 2022 0:0:0')
     },
     {
@@ -43,7 +43,7 @@ projects = [
         "lang":"HTML, Javascript, CSS", 
         "img":"./images/Portfolio.png", 
         "link":"../index.html", 
-        "score":5, 
+        "score":4.5, 
         "date": Date.parse('Nov 1 2022 0:0:0')
     },
     {
