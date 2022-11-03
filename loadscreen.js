@@ -1,5 +1,5 @@
 function createHTML(){
-    html = `<link href="file:///C:/Users/kaial/OneDrive%20-%20Board%20of%20Education%20of%20SD%2039%20(Vancouver)/DigitalPortfolio-main/loadscreen.css" rel="stylesheet" type="text/css" />
+    html = `<link href="./loadscreen.css" rel="stylesheet" type="text/css" />
     <div class="cover">
         <div class="center">
             <div class="loading loading1"></div>
