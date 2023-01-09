@@ -1,0 +1,62 @@
+.menu-button{
+    top: 0;
+    left: 0;
+    position: fixed;
+    width: 50px;
+    height: 50px;
+    background-color: var(--color2);
+    border: 3px solid black;
+    border-radius: 30px;
+    margin: 20px;
+    transition: all 0.2s;
+    z-index: 100;
+    overflow: hidden;
+}
+
+.menu-button:hover{
+    width: fit-content;
+    height: fit-content;
+    padding-left: 15px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    padding-right: 45px;
+}
+
+.menu-link{
+    position: relative;
+    display: block;
+    text-decoration:none;
+    color: var(--color5);
+    font-weight: bold;
+    white-space: nowrap;
+    opacity: 0;
+    transition: all 0.2s;
+    font-size: 20pt;
+    transform-origin: left;
+    margin: 5px;
+}
+
+.menu-link:hover{
+    transform: scale(1.2);
+    color: var(--color4);
+}
+
+.menu-button:hover .menu-link{
+    opacity: 1;
+}
+
+.menu-icon{
+    display: block;
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    width: 30px;
+    height: 30px;
+    transition: all 0.2s;
+    color: var(--color4);
+}
+
+.menu-button:hover .menu-icon{
+    left: -50px;
+    opacity: 0;
+}

@@ -54,6 +54,15 @@ projects = [
         "link":"./Boogie/index.html", 
         "score":4.2, 
         "date": Date.parse('July 19 2020 0:0:0')
+    },
+    {
+        "title":"Wave Function Collapse", 
+        "description":"My own interpretation of the Wave Function Collapse program", 
+        "lang":"Python", 
+        "img":"./images/wave.png", 
+        "link":"./WaveFunction/index.html", 
+        "score":3, 
+        "date": Date.parse('Dec 5 2022 0:0:0')
     }
 ]
 
