@@ -59,7 +59,7 @@ projects = [
         "title":"Wave Function Collapse", 
         "description":"My own interpretation of the Wave Function Collapse program", 
         "lang":"Python", 
-        "img":"./images/wave.png", 
+        "img":"./images/wavefunction.png", 
         "link":"./WaveFunction/index.html", 
         "score":3, 
         "date": Date.parse('Dec 5 2022 0:0:0')
