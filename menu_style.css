@@ -52,11 +52,12 @@
     left: 10px;
     width: 30px;
     height: 30px;
-    transition: all 0.2s;
+    transition: all 0.3s;
     color: var(--color4);
+    transform-origin: center;
 }
 
 .menu-button:hover .menu-icon{
     left: -50px;
-    opacity: 0;
+    transform: rotate(-90deg);
 }
