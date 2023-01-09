@@ -9,7 +9,11 @@ for(var i = 0; i < letters.length; i++){
   letters[i].onmouseover = function(e){
     e.target.className = "rainbow-letter-big"
     e.target.style.color = "rgb(" + Math.floor(Math.random()*255) +","+ Math.floor(Math.random()*255) +","+ Math.floor(Math.random()*255) + ")"
-    letter_timeouts[i] = 100
+    for(var i = 0; i < letters.length; i++){
+      if(e.target == letters[i]){
+        letter_timeouts[i] == 100
+      }
+    }
     setTimeout(function(){
       //e.target.className = "rainbow-letter"
       //e.target.style.color = "var(--color4)"
