@@ -6,7 +6,7 @@ projects = [
         "description":"A modified minecraft client with pathfinding capabilities.", 
         "lang":"Java", 
         "img":"./images/MinePath.png", 
-        "link":"./MinePath/index.html", 
+        "link":"./MinePath", 
         "score":4, 
         "date": Date.parse('Sept 1 2020 0:0:0')
     },
@@ -15,7 +15,7 @@ projects = [
         "description":"A tool to help generate 3D object files from Google maps data.", 
         "lang":"Python", 
         "img":"./images/GPXtoOBJheight.png", 
-        "link":"./GPXtoOBJ/index.html", 
+        "link":"./GPXtoOBJ", 
         "score":2.5, 
         "date": Date.parse('Aug 19 2021 0:0:0')
     },
@@ -24,7 +24,7 @@ projects = [
         "description":"My first experience with webdev. Just click frogs to make more.", 
         "lang":"Javascript, HTML", 
         "img":"./images/frogs.PNG", 
-        "link":"./Frogs/index.html", 
+        "link":"./Frogs", 
         "score":3, 
         "date": Date.parse('Feb 1 2022 0:0:0')
     },
@@ -33,7 +33,7 @@ projects = [
         "description":"A french language learning/fighting game using insults.", 
         "lang":"GML", 
         "img":"./images/MotsMechants.png", 
-        "link":"./MotsMechants/index.html", 
+        "link":"./MotsMechants", 
         "score":5, 
         "date": Date.parse('June 20 2022 0:0:0')
     },
@@ -42,7 +42,7 @@ projects = [
         "description":"A website (this website) I created for university applications", 
         "lang":"HTML, Javascript, CSS", 
         "img":"./images/Portfolio.png", 
-        "link":"../index.html", 
+        "link":"../", 
         "score":4.5, 
         "date": Date.parse('Nov 1 2022 0:0:0')
     },
@@ -51,7 +51,7 @@ projects = [
         "description":"A Discord bot that can play music into voice chat", 
         "lang":"Javascript", 
         "img":"./images/boogie.jpg", 
-        "link":"./Boogie/index.html", 
+        "link":"./Boogie", 
         "score":4.2, 
         "date": Date.parse('July 19 2020 0:0:0')
     },
@@ -60,7 +60,7 @@ projects = [
         "description":"My own interpretation of the Wave Function Collapse program", 
         "lang":"Python", 
         "img":"./images/wavefunction.png", 
-        "link":"./WaveFunction/index.html", 
+        "link":"./WaveFunction", 
         "score":3, 
         "date": Date.parse('Dec 5 2022 0:0:0')
     }
