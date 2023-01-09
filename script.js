@@ -2,13 +2,17 @@ letters = document.getElementsByClassName("rainbow-letter")
 
 const birthday = Date.parse('May 1 2005 4:35:45');
 
+letter_timeouts = []
+
 for(var i = 0; i < letters.length; i++){
+  letter_timeouts.push(0)
   letters[i].onmouseover = function(e){
     e.target.className = "rainbow-letter-big"
     e.target.style.color = "rgb(" + Math.floor(Math.random()*255) +","+ Math.floor(Math.random()*255) +","+ Math.floor(Math.random()*255) + ")"
+    letter_timeouts[i] = 100
     setTimeout(function(){
-      e.target.className = "rainbow-letter"
-      e.target.style.color = "var(--color4)"
+      //e.target.className = "rainbow-letter"
+      //e.target.style.color = "var(--color4)"
     }, 500);
   }
 }
@@ -16,6 +20,15 @@ for(var i = 0; i < letters.length; i++){
 window.requestAnimationFrame(tick)
 
 function tick(t){
+  for(var i = 0; i < letters.length; i++){
+    if(letter_timeouts[i] == 0){
+      letters[i].className = "rainbow-letter"
+      letters[i].style.color = "var(--color4)"
+    }else{
+      letter_timeouts[i] -= 1;
+    }
+  }
+
   age = Date.now()-birthday;
   years = Math.floor(age/31536000000)
   months = Math.floor((age/31536000000 - years)*12)
