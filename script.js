@@ -50,6 +50,21 @@ function tick(t){
 
 var carousel_update_timeout = setTimeout(carousel_update, 5000);
 
+function onVisibilityChanged() {
+  if (document.hidden || document.mozHidden || document.webkitHidden || document.msHidden) {
+    // The tab has lost focus
+    clearTimeout(carousel_update_timeout)
+  } else {
+    // The tab has gained focus
+    carousel_update_timeout = setTimeout(carousel_update, 5000);
+  }
+}
+
+document.addEventListener("visibilitychange", onVisibilityChanged, false);
+document.addEventListener("mozvisibilitychange", onVisibilityChanged, false);
+document.addEventListener("webkitvisibilitychange", onVisibilityChanged, false);
+document.addEventListener("msvisibilitychange", onVisibilityChanged, false);
+
 function loop_value(a, b){
   a = a%b
   if(a < 0){
