@@ -7,7 +7,7 @@ projects = [
         "lang":"Java", 
         "img":"./images/MinePath.png", 
         "link":"./MinePath", 
-        "score":4, 
+        "score":4.6, 
         "date": Date.parse('Sept 1 2020 0:0:0')
     },
     {
@@ -70,7 +70,7 @@ projects = [
         "lang":"Python", 
         "img":"./images/fish.png", 
         "link":"https://github.com/KaiSomething/SOTFisher", 
-        "score":4, 
+        "score":4.6, 
         "date": Date.parse('Oct 15 2022 0:0:0')
     }
 ]
