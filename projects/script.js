@@ -39,7 +39,7 @@ projects = [
     },
     {
         "title":"Digital Portfolio", 
-        "description":"A website (this website) I created for university applications", 
+        "description":"A website (this website) I created for university applications.", 
         "lang":"HTML, Javascript, CSS", 
         "img":"./images/Portfolio.png", 
         "link":"../", 
@@ -48,7 +48,7 @@ projects = [
     },
     {
         "title":"Boogie", 
-        "description":"A Discord bot that can play music into voice chat", 
+        "description":"A Discord bot that can play music into voice chat.", 
         "lang":"Javascript", 
         "img":"./images/boogie.jpg", 
         "link":"./Boogie", 
@@ -57,12 +57,21 @@ projects = [
     },
     {
         "title":"Wave Function Collapse", 
-        "description":"My own interpretation of the Wave Function Collapse program", 
+        "description":"My own interpretation of the Wave Function Collapse program.", 
         "lang":"Python", 
         "img":"./images/wavefunction.png", 
         "link":"./WaveFunction", 
         "score":3, 
         "date": Date.parse('Dec 5 2022 0:0:0')
+    },
+    {
+        "title":"SOT Fishing Tool", 
+        "description":"A tool to make fishing easier in the game Sea of Thieves.", 
+        "lang":"Python", 
+        "img":"./images/fish.png", 
+        "link":"https://github.com/KaiSomething/SOTFisher", 
+        "score":4, 
+        "date": Date.parse('Oct 15 2022 0:0:0')
     }
 ]
 
