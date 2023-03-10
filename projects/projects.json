@@ -1,0 +1,65 @@
+[
+    {
+        "title":"MinePath", 
+        "description":"A modified minecraft client with pathfinding capabilities.", 
+        "lang":"Java", 
+        "img":"./images/MinePath.png", 
+        "link":"./MinePath", 
+        "score":4, 
+        "date": "Sept 1 2020 0:0:0"
+    },
+    {
+        "title":"GPX to OBJ Converter", 
+        "description":"A tool to help generate 3D object files from Google maps data.", 
+        "lang":"Python", 
+        "img":"./images/GPXtoOBJheight.png", 
+        "link":"./GPXtoOBJ", 
+        "score":2.5, 
+        "date": "Aug 19 2021 0:0:0"
+    },
+    {
+        "title":"Here Come The Frogs", 
+        "description":"My first experience with webdev. Just click frogs to make more.", 
+        "lang":"Javascript, HTML", 
+        "img":"./images/frogs.PNG", 
+        "link":"./Frogs", 
+        "score":3, 
+        "date": "Feb 1 2022 0:0:0"
+    },
+    {
+        "title":"Mots Mechants", 
+        "description":"A french language learning/fighting game using insults.", 
+        "lang":"GML", 
+        "img":"./images/MotsMechants.png", 
+        "link":"./MotsMechants", 
+        "score":5, 
+        "date": "June 20 2022 0:0:0"
+    },
+    {
+        "title":"Digital Portfolio", 
+        "description":"A website (this website) I created for university applications", 
+        "lang":"HTML, Javascript, CSS", 
+        "img":"./images/Portfolio.png", 
+        "link":"../", 
+        "score":4.5, 
+        "date": "Nov 1 2022 0:0:0"
+    },
+    {
+        "title":"Boogie", 
+        "description":"A Discord bot that can play music into voice chat", 
+        "lang":"Javascript", 
+        "img":"./images/boogie.jpg", 
+        "link":"./Boogie", 
+        "score":4.2, 
+        "date": "July 19 2020 0:0:0"
+    },
+    {
+        "title":"Wave Function Collapse", 
+        "description":"My own interpretation of the Wave Function Collapse program", 
+        "lang":"Python", 
+        "img":"./images/wavefunction.png", 
+        "link":"./WaveFunction", 
+        "score":3, 
+        "date": "Dec 5 2022 0:0:0"
+    }
+]
