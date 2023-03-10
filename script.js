@@ -1,3 +1,80 @@
+var getJSON = function(url, callback) {
+
+  var xhr = new XMLHttpRequest();
+  xhr.open('GET', url, true);
+  xhr.responseType = 'json';
+
+  xhr.onload = function() {
+
+      var status = xhr.status;
+
+      if (status == 200) {
+          callback(null, xhr.response);
+      } else {
+          callback(status);
+      }
+  };
+
+  xhr.send();
+};
+
+var projects;
+getJSON('./projects/projects.json',  function(err, data) {
+  projects = data;
+});
+
+function createHTML(proj, index){
+  html = `<li class="carousel-item-`+index+` carousel-item">
+    <a class="project-card fadein" href="./projects/`+ proj.link +`">
+    <img class="project-card-image" src="./projects/`+ proj.img +`">
+    <div class="project-card-description">
+        `+ proj.description +`
+    </div>
+    <div class="project-card-info">
+        <span class="project-card-title">`+ proj.title +`</span>
+        <span style="color: #FFD700;">` + Array(Math.floor(proj.score)+1).join("★") + `</span><!--
+        --><span style="">` + Array(5-Math.floor(proj.score)+1).join("☆") + `</span>
+        <br>
+        <span class="project-card-language">`+ proj.lang +`</span>
+        <span class="project-card-language" style="color:grey;">`+ new Date(proj.date).toLocaleDateString() +`</span>
+    </div>
+  </a>
+</li>`
+  return html
+}
+
+function orderByCool(list){
+  for(var i = 0; i <= list.length-1; i++){
+      for(var j = 0; j < ( list.length - i -1); j++){
+          if(list[j].score < list[j+1].score){
+              var temp = list[j]
+              list[j] = list[j + 1]
+              list[j+1] = temp
+          }
+      }
+  }
+}
+
+function load(filt){
+  orderByCool(projects)
+
+  showcase = document.getElementsByClassName("project-carousel")[0]
+
+  for(var i = 0; i < projects.length; i++){
+    if(i == 0){
+      index = "prev"
+    }else if(i == 1){
+      index = "current"
+    }else if(i == 0){
+      index = "next"
+    }else{
+      index = "out"
+    }
+    showcase.insertAdjacentHTML('beforeend', createHTML(projects[i], "carousel-item-"+index));
+  }
+
+}
+
 letters = document.getElementsByClassName("rainbow-letter")
 
 const birthday = Date.parse('May 1 2005 4:35:45');
@@ -16,6 +93,7 @@ for(var i = 0; i < letters.length; i++){
     e.target.style.color = "rgb(" + Math.floor(Math.random()*255) +","+ Math.floor(Math.random()*255) +","+ Math.floor(Math.random()*255) + ")"
   }
 }
+
 
 window.requestAnimationFrame(tick)
 

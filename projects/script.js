@@ -63,8 +63,8 @@ function orderByCool(list){
 }
 
 function createHTML(proj){
-    html = `<a class="project-card fadein" href="`+ proj.link +`">
-    <img class="project-card-image" src="`+ proj.img +`">
+    html = `<a class="project-card fadein" href=".`+ proj.link +`">
+    <img class="project-card-image" src=".`+ proj.img +`">
     <div class="project-card-description">
         `+ proj.description +`
     </div>
