@@ -21,6 +21,7 @@ var getJSON = function(url, callback) {
 var projects;
 getJSON('./projects/projects.json',  function(err, data) {
   projects = data;
+  load()
 });
 
 function createHTML(proj, index){
@@ -167,5 +168,3 @@ function carousel_update(){
 
   carousel_update_timeout = setTimeout(carousel_update, 5000);
 }
-
-load()
