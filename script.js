@@ -58,7 +58,7 @@ function orderByCool(list){
 
 function load(){
   orderByCool(projects)
-  projects = projects.slice(0, 4)
+  projects = projects.slice(0, 5)
 
   showcase = document.getElementsByClassName("project-carousel")[0]
 
@@ -67,7 +67,7 @@ function load(){
       index = "prev"
     }else if(i == 1){
       index = "current"
-    }else if(i == 0){
+    }else if(i == 2){
       index = "next"
     }else{
       index = "out"
