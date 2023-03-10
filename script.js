@@ -72,7 +72,7 @@ function load(){
     }else{
       index = "out"
     }
-    showcase.insertAdjacentHTML('beforeend', createHTML(projects[i], "carousel-item-"+index));
+    showcase.insertAdjacentHTML('beforeend', createHTML(projects[i], index));
   }
 
 }
