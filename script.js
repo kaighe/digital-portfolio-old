@@ -58,6 +58,7 @@ function orderByCool(list){
 
 function load(){
   orderByCool(projects)
+  projects = projects.slice(0, 4)
 
   showcase = document.getElementsByClassName("project-carousel")[0]
 
