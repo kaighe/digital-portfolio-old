@@ -156,8 +156,8 @@ body {
 .project-card{
     display: block;
     position:relative;
-    width: min(500px, 80vw);
-    height: 300px;
+    width: min(400px, 80vw);
+    height: 280px;
     background-color: var(--color2);
     border-radius: 20px;
     border: 5px solid black;
@@ -201,7 +201,7 @@ body {
     width: 100%;
     height: 100%;
     padding: 5px;
-    padding-top: calc(25px + 2ch);
+    padding-top: calc(25px + 4ch);
 }
 
 .project-carousel{

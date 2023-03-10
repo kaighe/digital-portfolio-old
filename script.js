@@ -55,7 +55,7 @@ function orderByCool(list){
   }
 }
 
-function load(filt){
+function load(){
   orderByCool(projects)
 
   showcase = document.getElementsByClassName("project-carousel")[0]
@@ -167,3 +167,5 @@ function carousel_update(){
 
   carousel_update_timeout = setTimeout(carousel_update, 5000);
 }
+
+load()
