@@ -85,14 +85,22 @@ const letter_timeouts = []
 
 for(var i = 0; i < letters.length; i++){
   letter_timeouts.push(0)
-  letters[i].onmouseover = function(e){
+  letters[i].onmouseenter = function(e){
+    for(var i = 0; i < letters.length; i++){
+      if(e.target == letters[i]){
+        letter_timeouts[i] = 10000000000000000000;
+      }
+    }
+    e.target.className = "rainbow-letter rainbow-letter-big"
+    e.target.style.color = "rgb(" + Math.floor(Math.random()*255) +","+ Math.floor(Math.random()*255) +","+ Math.floor(Math.random()*255) + ")"
+  }
+
+  letters[i].onmouseleave = function(e){
     for(var i = 0; i < letters.length; i++){
       if(e.target == letters[i]){
         letter_timeouts[i] = 100;
       }
     }
-    e.target.className = "rainbow-letter rainbow-letter-big"
-    e.target.style.color = "rgb(" + Math.floor(Math.random()*255) +","+ Math.floor(Math.random()*255) +","+ Math.floor(Math.random()*255) + ")"
   }
 }
 
