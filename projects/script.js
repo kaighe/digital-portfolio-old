@@ -29,7 +29,7 @@ getJSON('./projects.json',  function(err, data) {
 function orderByNewest(list){
     for(var i = 0; i <= list.length-1; i++){
         for(var j = 0; j < ( list.length - i -1); j++){
-            if(list[j].date < list[j+1].date){
+            if(new Date(list[j].date) < new Date(list[j+1].date)){
                 var temp = list[j]
                 list[j] = list[j + 1]
                 list[j+1] = temp
@@ -41,7 +41,7 @@ function orderByNewest(list){
 function orderByOldest(list){
     for(var i = 0; i <= list.length-1; i++){
         for(var j = 0; j < ( list.length - i -1); j++){
-            if(list[j].date > list[j+1].date){
+            if(new Date(list[j].date) > new Date(list[j+1].date)){
                 var temp = list[j]
                 list[j] = list[j + 1]
                 list[j+1] = temp
