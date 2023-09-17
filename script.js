@@ -88,7 +88,7 @@ for(var i = 0; i < letters.length; i++){
   letters[i].onmouseover = function(e){
     for(var i = 0; i < letters.length; i++){
       if(e.target == letters[i]){
-        letter_timeouts[i] = 5
+        letter_timeouts[i] = 500
       }
     }
     e.target.className = "rainbow-letter rainbow-letter-big"
