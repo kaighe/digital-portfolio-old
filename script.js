@@ -99,15 +99,17 @@ for(var i = 0; i < letters.length; i++){
 
 window.requestAnimationFrame(tick)
 
+var previous = 0;
 function tick(t){
   for(var i = 0; i < letter_timeouts.length; i++){
     if(letter_timeouts[i] <= 0){
       letters[i].className = "rainbow-letter"
       letters[i].style.color = "var(--color4)"
     }else{
-      letter_timeouts[i] -= t;
+      letter_timeouts[i] -= t-previous;
     }
   }
+  previous = t;
   //console.log(letter_timeouts)
 
   age = Date.now()-birthday;
