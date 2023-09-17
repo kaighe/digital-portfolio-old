@@ -98,7 +98,7 @@ for(var i = 0; i < letters.length; i++){
   letters[i].onmouseleave = function(e){
     for(var i = 0; i < letters.length; i++){
       if(e.target == letters[i]){
-        letter_timeouts[i] = 100;
+        letter_timeouts[i] = 50;
       }
     }
   }
