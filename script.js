@@ -88,7 +88,7 @@ for(var i = 0; i < letters.length; i++){
   letters[i].onmouseover = function(e){
     for(var i = 0; i < letters.length; i++){
       if(e.target == letters[i]){
-        letter_timeouts[i] = 100
+        letter_timeouts[i] = 5
       }
     }
     e.target.className = "rainbow-letter rainbow-letter-big"
@@ -101,11 +101,11 @@ window.requestAnimationFrame(tick)
 
 function tick(t){
   for(var i = 0; i < letter_timeouts.length; i++){
-    if(letter_timeouts[i] == 0){
+    if(letter_timeouts[i] <= 0){
       letters[i].className = "rainbow-letter"
       letters[i].style.color = "var(--color4)"
     }else{
-      letter_timeouts[i] -= 1;
+      letter_timeouts[i] -= t;
     }
   }
   //console.log(letter_timeouts)
