@@ -66,7 +66,7 @@
         "title":"CodeGraph", 
         "description":"A prototype for a graph-based code editor", 
         "lang":"HTML, Javascript, CSS", 
-        "img":"/images/codegraph.png", 
+        "img":"/images/codegraph.PNG", 
         "link":"/MinePath", 
         "score":4.3, 
         "date": "Feb 4 2023 0:0:0"
@@ -75,7 +75,7 @@
         "title":"SnekScript", 
         "description":"A basic scripting language with an online editor.", 
         "lang":"Python, HTML, CSS", 
-        "img":"/images/scripting.png", 
+        "img":"/images/scripting.PNG", 
         "link":"/MinePath", 
         "score":4.7, 
         "date": "Apr 27 2023 0:0:0"
