@@ -61,5 +61,32 @@
         "link":"/WaveFunction", 
         "score":3, 
         "date": "Dec 5 2022 0:0:0"
+    },
+    {
+        "title":"CodeGraph", 
+        "description":"A prototype for a graph-based code editor", 
+        "lang":"HTML, Javascript, CSS", 
+        "img":"/images/codegraph.png", 
+        "link":"/MinePath", 
+        "score":4.3, 
+        "date": "Feb 4 2023 0:0:0"
+    },
+    {
+        "title":"SnekScript", 
+        "description":"A basic scripting language with an online editor.", 
+        "lang":"Python, HTML, CSS", 
+        "img":"/images/scripting.png", 
+        "link":"/MinePath", 
+        "score":4.7, 
+        "date": "Apr 27 2023 0:0:0"
+    },
+    {
+        "title":"SOT Fisher", 
+        "description":"A tool to help with fishing in the videogame 'Sea of Thieves'", 
+        "lang":"Python", 
+        "img":"/images/fish.png", 
+        "link":"/MinePath", 
+        "score":3.5, 
+        "date": "Jan 9 2023 0:0:0"
     }
 ]
