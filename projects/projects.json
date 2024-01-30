@@ -1,7 +1,7 @@
 [
     {
         "title":"MinePath", 
-        "description":"A modified minecraft client with pathfinding capabilities.", 
+        "description":"A modified minecraft client with pathfinding capabilities", 
         "lang":"Java", 
         "img":"/images/MinePath.png", 
         "link":"/MinePath", 
@@ -10,7 +10,7 @@
     },
     {
         "title":"GPX to OBJ Converter", 
-        "description":"A tool to help generate 3D object files from Google maps data.", 
+        "description":"A tool to help generate 3D object files from Google maps data", 
         "lang":"Python", 
         "img":"/images/GPXtoOBJheight.png", 
         "link":"/GPXtoOBJ", 
@@ -19,7 +19,7 @@
     },
     {
         "title":"Here Come The Frogs", 
-        "description":"My first experience with webdev. Just click frogs to make more.", 
+        "description":"My first experience with webdev. Just click frogs to make more", 
         "lang":"Javascript, HTML", 
         "img":"/images/frogs.PNG", 
         "link":"/Frogs", 
@@ -28,7 +28,7 @@
     },
     {
         "title":"Mots Mechants", 
-        "description":"A french language learning/fighting game using insults.", 
+        "description":"A french language learning/fighting game using insults", 
         "lang":"GML", 
         "img":"/images/MotsMechants.png", 
         "link":"/MotsMechants", 
@@ -73,7 +73,7 @@
     },
     {
         "title":"SnekScript", 
-        "description":"A basic scripting language with an online editor.", 
+        "description":"A basic scripting language with an online editor", 
         "lang":"Python, HTML, CSS", 
         "img":"/images/scripting.PNG", 
         "link":"/SnekScript", 
@@ -88,5 +88,14 @@
         "link":"/SOTFisher", 
         "score":3.5, 
         "date": "Jan 9 2023 0:0:0"
+    },
+    {
+        "title":"Truth Table Generator", 
+        "description":"A tool to help generate logical truth tables", 
+        "lang":"HTML, Javascript, CSS", 
+        "img":"/images/TruthTables.png", 
+        "link":"/TruthTables", 
+        "score":4.5, 
+        "date": "Jan 25 2024 0:0:0"
     }
 ]
