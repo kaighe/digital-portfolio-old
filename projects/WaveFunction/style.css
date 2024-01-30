@@ -74,8 +74,6 @@ body {
 
 footer {
     margin-top: 40px;
-    display: flex;
-    justify-content: center;
     padding: 10px;
     background-color: var(--color7);
     color: var(--color5);
