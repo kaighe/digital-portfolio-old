@@ -14,7 +14,7 @@ body {
 }
 
 .site-wrapper{
-    min-height: calc(100vh - 81px);
+    min-height: calc(100vh - 82px);
     overflow: hidden;
 }
 
